@@ -49,11 +49,11 @@ Resources:
                 set -e
                 sudo -i -u ec2-user bash << EOF
                 echo "Setup the Workshop exercises"
-                git clone https://github.com/aws-samples/amazon-sagemaker-devops-with-ml.git
+                git clone https://github.com/farshadsm/test_mlops_aws.git
                 pwd
                 ls -la
                 mkdir /home/ec2-user/SageMaker/byo-staging
-                cp -R /home/ec2-user/amazon-sagemaker-devops-with-ml/2-Bring-Your-Own/* /home/ec2-user/SageMaker/byo-staging/
+                cp -R /home/ec2-user/test_mlops_aws/* /home/ec2-user/SageMaker/byo-staging/
     DependsOn: CodeCommitRepo
  
   SageMakerNotebookInstance:
